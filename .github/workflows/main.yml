@@ -1,0 +1,11 @@
+on: push
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        tag:
+        - "algolia"
+        - "instantsearch"
+    steps:
+      - run: echo ${{ matrix.tag }}
