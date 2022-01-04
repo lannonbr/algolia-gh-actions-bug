@@ -8,4 +8,4 @@ jobs:
         - "algolia"
         - "instantsearch"
     steps:
-      - run: echo ${{ matrix.tag }}
+      - run: echo "${{ matrix.tag }}"
