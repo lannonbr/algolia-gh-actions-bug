@@ -9,4 +9,5 @@ jobs:
         - "instantsearch"
         - "lannonbr"
     steps:
-      - run: echo "${{ matrix.tag }}"
+      - uses: actions/checkout@v2
+      - run: ls | grep --exclude="${{ matrix.tag }}"
