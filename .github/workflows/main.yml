@@ -7,5 +7,6 @@ jobs:
         tag:
         - "algolia"
         - "instantsearch"
+        - "lannonbr"
     steps:
       - run: echo "${{ matrix.tag }}"
